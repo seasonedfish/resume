@@ -23,3 +23,6 @@
   {}                           % Can be used to insert code before the heading
   [\titlerule]
 
+\newenvironment{doutline}
+    {\begin{outline}\renewcommand{\outlinei}{description}}
+    {\end{outline}}
