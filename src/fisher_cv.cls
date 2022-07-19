@@ -1,0 +1,16 @@
+\LoadClass{article}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{fisher_cv}[2022/07/19 My custom CV class]
+
+\RequirePackage{titlesec}
+\RequirePackage[margin=0.75in]{geometry}
+\RequirePackage{outlines}
+
+\pagenumbering{gobble}
+
+\titleformat{\section}         
+  {\Large\scshape\raggedright} 
+  {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
+  {}                           % Can be used to insert code before the heading
+  [\titlerule]
+
