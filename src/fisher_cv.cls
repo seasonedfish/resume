@@ -5,8 +5,14 @@
 \RequirePackage{titlesec}
 \RequirePackage[margin=0.75in]{geometry}
 \RequirePackage{outlines}
+\RequirePackage{fancyhdr}
 
 \pagenumbering{gobble}
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+
+\newcommand{\header}[2]{\fancyhf{}\fancyhead[L]{#1}\fancyhead[R]{#2}}
 
 \titleformat{\section}         
   {\Large\scshape\raggedright} 
