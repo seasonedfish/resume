@@ -6,6 +6,7 @@
 \RequirePackage[margin=0.75in]{geometry}
 \RequirePackage{outlines}
 \RequirePackage{fancyhdr}
+\RequirePackage{scrextend}
 
 \pagenumbering{gobble}
 
@@ -26,3 +27,5 @@
 \newenvironment{doutline}
     {\begin{outline}\renewcommand{\outlinei}{description}}
     {\end{outline}}
+
+\setkomafont{labelinglabel}{\bfseries}
