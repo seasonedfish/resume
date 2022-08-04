@@ -25,7 +25,7 @@
   [\titlerule]
 
 \newenvironment{doutline}
-    {\begin{outline}\renewcommand{\outlinei}{description}}
+    {\begin{outline}[description]}
     {\end{outline}}
 
 \setkomafont{labelinglabel}{\bfseries}
