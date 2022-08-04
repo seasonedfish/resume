@@ -13,9 +13,6 @@
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 
-% https://tex.stackexchange.com/a/31704
-\renewcommand{\arraystretch}{1.25}
-
 \newcommand{\header}[2]{\fancyhf{}\fancyhead[L]{#1}\fancyhead[R]{#2}}
 
 \titleformat{\section}         
