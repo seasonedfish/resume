@@ -28,3 +28,4 @@
     {\end{outline}}
 
 \setkomafont{labelinglabel}{\bfseries}
+
