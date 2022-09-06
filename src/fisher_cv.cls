@@ -7,6 +7,8 @@
 \RequirePackage{outlines}
 \RequirePackage{fancyhdr}
 \RequirePackage{scrextend}
+% Extremely subtle typographical improvements
+\RequirePackage{microtype}
 
 \pagenumbering{gobble}
 
