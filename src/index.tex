@@ -1,4 +1,5 @@
 \section{Education}
+% doutline means Description Outline, used to bold the text inside brackets
 \begin{doutline}
     % We use a \ before the space to tell Latex that the . in St. doesn't end a sentence.
     % https://tex.stackexchange.com/a/2230
@@ -8,6 +9,7 @@
 \end{doutline}
 
 \section{Skills}
+% labeling allows for a two-column outline with the left side bolded.
 \begin{labeling}{Programming Languages}
     \item [Programming Languages] (Intermediate) Python, Java; (Basic) Bash, C, Haskell, PHP
     \item [Markup Languages] \LaTeX, HTML, Markdown, reStructuredText
@@ -18,6 +20,7 @@
 
 \section{Experience}
 \begin{doutline}
+    % We use hfill to align the year to the right.
     \1[UMass Lowell] / Research Assistant \hfill 2022
         \2 Developed optimized, parallel code to transform dataset with over 100 million entries
         \2 Automated the multithreaded downloading of thousands of files
@@ -26,6 +29,8 @@
         \2 Designed preprocessing module for machine learning software using Pandas
             \3 Used vectorized functions for idiomatic, efficient code
             \3 Used Pytest for integration testing and GitHub Actions for CI
+    % We use two dashes (--) to create an en-dash for the year range.
+    % https://tex.stackexchange.com/a/3821
     \1[Energize Andover] / SWE Intern \hfill 2019--2021
         \2 Developed a Python client for Building Energy Gateway using Requests
             \3 Used Pytest for unit testing, Coveralls for coverage (reached 100\% coverage)
