@@ -9,8 +9,6 @@
 \RequirePackage{scrextend}
 % Extremely subtle typographical improvements
 \RequirePackage{microtype}
-% Links
-\RequirePackage{hyperref}
 
 \pagenumbering{gobble}
 
