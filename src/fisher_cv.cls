@@ -4,7 +4,7 @@
 \ProvidesClass{fisher_cv}[2022/07/19 My custom CV class]
 
 \RequirePackage{titlesec}
-\RequirePackage[margin=0.75in]{geometry}
+\RequirePackage[margin=0.75in,bottom=0.5in]{geometry}
 \RequirePackage{outlines}
 \RequirePackage{fancyhdr}
 \RequirePackage{scrextend}
