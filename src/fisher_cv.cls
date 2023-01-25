@@ -32,3 +32,7 @@
     {\end{outline}}
 
 \setkomafont{labelinglabel}{\bfseries}
+
+% Allow copyable small caps
+% https://tex.stackexchange.com/questions/269765/make-small-caps-copyable-as-capital-letters-in-pdf
+\RequirePackage{relsize}
