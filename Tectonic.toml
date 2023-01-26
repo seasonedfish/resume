@@ -3,5 +3,5 @@ name = 'resume'
 bundle = 'https://data1.fullyjustified.net/tlextras-2021.3r1.tar'
 
 [[output]]
-name = 'default'
+name = 'resume'
 type = 'pdf'
