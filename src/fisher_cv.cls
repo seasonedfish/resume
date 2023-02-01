@@ -33,4 +33,5 @@
 % https://tex.stackexchange.com/questions/269765/make-small-caps-copyable-as-capital-letters-in-pdf
 \RequirePackage{relsize}
 
+% Entry helper command, goes to 0 level in outline and bolds argument
 \newcommand{\entry}[1]{\0 \textbf{#1}}
