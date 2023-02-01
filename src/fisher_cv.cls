@@ -25,7 +25,7 @@
   [\titlerule]
 
 \RequirePackage{setspace}
-% \linespread{0.75}
+\linespread{0.75}
 
 \setkomafont{labelinglabel}{\bfseries}
 
