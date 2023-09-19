@@ -27,7 +27,10 @@
 \RequirePackage{setspace}
 \linespread{0.75}
 
-\setkomafont{labelinglabel}{\bfseries}
+% Add colons to description lists
+\renewcommand{\descriptionlabel}[1]{%
+  \hspace\labelsep \upshape\bfseries #1:%
+}
 
 % Allow copyable small caps
 % https://tex.stackexchange.com/questions/269765/make-small-caps-copyable-as-capital-letters-in-pdf
