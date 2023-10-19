@@ -1,4 +1,88 @@
-\documentclass{fisher_cv}
-% \title{My Title}
-\header{Yu (Fisher) Sun \\ St. Louis, MO / Andover, MA}{f.sun@wustl.edu \\ github.com/seasonedfish}
+% r/EngineeringResumes Resume Template
+
+\documentclass[11pt]{article} % set main font size
+\usepackage[empty]{fullpage} % use full page. remove header and footer
+\usepackage[letterpaper,margin=0.5in]{geometry} % set paper size and margins
+\usepackage{enumitem} % add list functionality
+\usepackage{marvosym} % add euro symbol €
+\usepackage{tabularx} % create columns
+\usepackage[hidelinks]{hyperref} % remove hyperlink color and borders
+
+% select font
+% \usepackage{tgpagella}
+% \usepackage{charter} 
+% \usepackage[sfdefault]{roboto}
+% \usepackage{libertine}
+
+\usepackage[utf8]{inputenc} % set input encoding to unicode UTF-8
+\usepackage[T1]{fontenc} % set character encoding to T1/Cork
+\raggedbottom % make page the height of text on the page
+\raggedright % remove text justification
+\setlength{\tabcolsep}{0pt} % remove column paddings
+% \input{glyphtounicode} \pdfgentounicode = 1 % verify if generated PDF is machine-readable
+
+% format section headings
+\usepackage{titlesec}
+\titleformat
+{\section} % command
+{\vspace{0pt}\large} % format
+{} % label
+{0pt} % sep
+{} % before code
+[\vspace{0.75pt} \titlerule \vspace{1.75pt}] % after code
+
+% create subsection lists
+\newcommand{\BeginSubsectionList}{\begin{itemize}[leftmargin=0pt,label={}]}
+\newcommand{\EndSubsectionList}{\end{itemize}}
+
+% format bullet points
+\renewcommand\labelitemii{$\vcenter{\hbox{\small$\bullet$}}$}
+\newcommand{\Bullet}[1]{\item{#1 \vspace{-2pt}}}
+\newcommand{\BeginBulletList}{\begin{itemize}[leftmargin=12pt]}
+\newcommand{\EndBulletList}{\end{itemize}\vspace{0pt}}
+
+% format subsections
+\newcommand{\NewSkillCategory}[2]{
+    \vspace{-10pt}
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}} r}
+        \textbf{#1:} #2
+    \end{tabular*}
+    
+    \vspace{0pt}
+}
+
+\newcommand{\NewJob}[4]{
+    \vspace{-10pt}
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}} r}
+        {\textbf{#1,} {#2} $-$ #3} & {#4} \\
+    \end{tabular*}
+
+    \vspace{-10pt}
+}
+
+\newcommand{\NewProject}[3]{
+    \vspace{-10pt}
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}} r}
+      \textbf{#1} {#2} & {#3} \\
+    \end{tabular*}
+    
+    \vspace{-10pt}
+}
+
+\newcommand{\NewSchool}[3]{
+    \vspace{-10pt}
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}} r}
+        \textbf{#1} $-$ #2 & #3
+    \end{tabular*}
+    
+    \vspace{0pt}
+}
+
+% ---------------------------------------------------------------------
+% resume starts here
+
 \begin{document}

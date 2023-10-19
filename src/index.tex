@@ -1,72 +1,158 @@
+\begin{center}
+    {\href{}{\textbf{\Large Yu (Fisher) Sun}}} 
+    \\ \vspace{5pt} 
+    \href{mailto:f.sun@wustl.edu}{f.sun@wustl.edu}
+    \hspace{28pt}
+    \href{https://www.fishersun.com}{fishersun.com}
+    \hspace{28pt}
+    \href{http://github.com/seasonedfish}{github.com/seasonedfish}
+\end{center}
+
+\vspace{-20pt}
 \section{Education}
-% doutline means Description Outline, used to bold the text inside brackets
-\begin{outline}
-    % We use a \ before the space to tell Latex that the . in St. doesn't end a sentence.
-    % https://tex.stackexchange.com/a/2230
-    \entry{Washington University in St.\ Louis}
-    \hfill Expected May 2025
-        \1 Bachelor of Science in Computer Science, \textsmaller{GPA} 3.94/4.00
-\end{outline}
+\BeginSubsectionList        
+    \NewSchool
+        {\href{https://wustl.edu/}{Washington University in St.\ Louis}}
+        {B.S.\ Computer Science}
+        {Expected May 2025}
 
-\section{Experience}
-\begin{outline}
-    \entry{Washington University in St.\ Louis} / Research Assistant
-    % We use hfill to align the year to the right.
-    \hfill June 2023--Sept.\ 2023
-        \1 Spearheaded major update of body-machine interface software (built with Python and Qt),
-        transforming it from supporting a single kind of sensor to supporting a variety of sensors using polymorphism
-    \entry{UMass Lowell} / Research Assistant
-    \hfill May 2022--July 2022
-        \1 Developed optimized, parallel Python code to transform dataset with over 100 million entries
-        \1 Automated the multithreaded downloading of thousands of files using ThreadPoolExecutor
-        \1 Extracted relevant data from over 2 \textsmaller{GB} of \textsmaller{SEC} \textsmaller{S-1} documents using Python and Beautiful Soup 4
-    \entry{UMass Chan Medical School} / Research Assistant
-    \hfill July 2020--Sept.\ 2020
-        \1 Designed preprocessing module using Pandas to standardize information from multiple datasets
-            \2 Developed idiomatic, efficient code using vectorized functions
-            \2 Implemented integration testing with Pytest and continuous integration (\textsmaller{CI}) with GitHub Actions
-    % We use two dashes (--) to create an en-dash for the year range.
-    % https://tex.stackexchange.com/a/3821
-    \entry{Energize Andover} / Software Engineering Intern
-    \hfill July 2019--Oct.\ 2021
-        \1 Developed a Python client for Building Energy Gateway using Requests
-            \2 Reached 100\% code coverage with Pytest and Coveralls; documented \textsmaller{API} with Sphinx and Read the Docs
-        \1 Created an Alexa app with Flask and \textsmaller{AWS} Lambda to track the temperature of Andover High School
-\end{outline}
+    \vspace{2.75pt}
 
-\section{Projects}
-\begin{outline}
-    \entry{CMake independent study} / C++, CMake, Google Test, GitHub Pages
-    \hfill Jan.\ 2023--May\ 2023
-        \1 Modernized the WashU Object-Oriented Software with CMake, allowing cross-platform C++ development
-            \2 Configured CMakeLists.txt files with best practices, refactored unit tests, wrote documentation
-    \entry{Voting app} / Go, Chi, Mongo\textsmaller{DB}, Mongo\textsmaller{DB} Atlas, Mongo\textsmaller{DB} Go Driver
-    \hfill Nov.\ 2022--Dec.\ 2022
-        \1 Built, in a team of two, a web app in which users can vote for Student Union candidates
-            \2 Deployed a database on Mongo\textsmaller{DB} Atlas; wrote the backend that updates it using the Mongo\textsmaller{DB} Go Driver
-            \2 Developed, in Go, the app's \textsmaller{REST} \textsmaller{API}, and the routing logic to serve both backend and React frontend
-            \2 Observed the \textsmaller{MVC} design pattern: designed separate model and controller components
-    \entry{Personal blog} / Jekyll, \textsmaller{HTML}, Liquid, \textsmaller{SCSS}, Cloudflare Pages, Lighthouse
-    \hfill Nov.\ 2020--Present
-        \1 Built a static site for personal coding reflections using Jekyll; deployed it using Cloudflare Pages
-            \2 Created a custom theme using \textsmaller{HTML}, Liquid, and \textsmaller{SCSS}; reached Lighthouse Performance score of 100\%
-    \entry{Trashfree} / Amazon \textsmaller{EC2}, Apache, \textsmaller{PHP}, \textsmaller{SQL}, \textsmaller{HTML}, \textsmaller{CSS}
-    \hfill Oct.\ 2022
-        \1 Developed, in a team of four, a web app to plan trash cleanups using \textsmaller{PHP}, \textsmaller{HTML}, and \textsmaller{CSS}
-            \2 Created a Maria\textsmaller{DB} database for storing user and event data; wrote the \textsmaller{SQL} queries that update it
-\end{outline}
+  \EndSubsectionList
 
+\vspace{-20pt}
 \section{Skills}
-\begin{description}
-    \item [Languages] Python, Go, Java, \textsmaller{HTML}, \textsmaller{CSS}, C++, C, Rust, Swift, JavaScript, Typescript, \textsmaller{SQL}, Haskell, \textsmaller{\LaTeX}
-    \item [Software] Git, JUnit, Pytest, Maven, Poetry, GitHub Actions, Coveralls, Nix, \textsmaller{GNU} Parallel, CMake, Node
-    \item [Platforms] Linux, mac\textsmaller{OS}, Windows, \textsmaller{AWS EC2}, \textsmaller{AWS} Lambda, Oracle Cloud Infrastructure, Cloudflare, \textsmaller{IBM LSF}
-    \item [Concepts] \textsmaller{DNS}, \textsmaller{HTTP}, Linux \textsmaller{FHS}, relational databases, \textsmaller{REST API}s, client-server architecture
-\end{description}
+    \BeginSubsectionList        
+        \NewSkillCategory
+            {Languages}
+            {Python, Go, Java, HTML, CSS, C++, C, Rust, Swift, JavaScript, TypeScript, SQL, \LaTeX}
 
+        \vspace{2.75pt}
+        \NewSkillCategory
+            {Software}
+            {Git, JUnit, Pytest, Maven, Poetry, GitHub Actions, Coveralls, Nix, GNU Parallel, CMake, Node}
+        
+        \vspace{2.75pt}
+        \NewSkillCategory
+            {Concepts}
+            {DNS, HTTP, Linux FHS, relational databases, REST APIs, client-server architecture}
+  \EndSubsectionList
+
+\vspace{-20pt}
+\section{Experience}    
+    \BeginSubsectionList        
+        \NewJob
+            {Research Assistant}
+            {{Washington University in St. Louis}}
+            {St.\ Louis, MO}
+            {June 2023--Sept 2023}
+            
+            \BeginBulletList
+                \Bullet{Spearheaded major update of body-machine interface software (built with Python and Qt), transforming it
+                from supporting a single kind of sensor to supporting a variety of sensors using polymorphism}
+            \EndBulletList
+
+        \vspace{8pt}
+        \NewJob
+            {Research Assistant}
+            {UMass Lowell}
+            {Remote}
+            {May 2022--July 2022}
+            
+            \BeginBulletList
+                \Bullet{Developed optimized, parallel Python code to transform dataset with over 100 million entries}
+                \Bullet{Automated the multithreaded downloading of thousands of files using ThreadPoolExecutor}
+                \Bullet{Extracted relevant data from over 2 GB of SEC S-1 documents using Python and Beautiful Soup 4}
+            \EndBulletList
+
+        \vspace{8pt}
+        \NewJob
+            {Research Assistant}
+            {UMass Chan Medical School}
+            {Remote}
+            {July 2020--Sept 2020}
+            
+            \BeginBulletList
+                \Bullet{Designed preprocessing module using Pandas to standardize information from multiple datasets}
+                \Bullet{Developed idiomatic, efficient code using vectorized functions}
+                \Bullet{Implemented integration testing with Pytest and continuous integration (CI) with GitHub Actions}
+            \EndBulletList
+        
+        \vspace{8pt}
+        \NewJob
+            {Software Engineering Intern}
+            {Energize Andover}
+            {Andover, MA}
+            {July 2019--Oct 2021}
+            
+            \BeginBulletList
+                \Bullet{Developed a Python client for Building Energy Gateway using Requests}
+                \Bullet{Reached 100\% code coverage with Pytest and Coveralls; documented API with Sphinx and Read the Docs}
+                \Bullet{Created an Alexa app with Flask and AWS Lambda to track the temperature of Andover High School}
+            \EndBulletList
+
+    \EndSubsectionList
+
+\vspace{-20pt}
+\section{Projects}
+    \BeginSubsectionList
+        \NewProject
+            {CMake independent study}
+            {$-$ C++, CMake, Google Test, GitHub Pages} 
+            
+            \BeginBulletList
+                \Bullet{Modernized the WashU Object-Oriented Software with CMake, allowing cross-platform C++ development}
+                \Bullet{Configured CMakeLists.txt files with best practices, refactored unit tests, wrote documentation}
+            \EndBulletList
+          
+        \vspace{8pt}
+        \NewProject
+            {Voting app}
+            {$-$ Go, Chi, MongoDB Atlas, MongoDB Go Driver}
+            {\href{https://github.com/seasonedfish/suelections}{github.com/seasonedfish/suelections}} 
+            
+            \BeginBulletList
+                \Bullet{Built, in a team of two, a web app in which users can vote for Student Union candidates}
+                \Bullet{Deployed a database on MongoDB Atlas; wrote the backend that updates it using the MongoDB Go Driver}
+                \Bullet{Developed, in Go, the app's REST API, and the routing logic to serve both backend and React frontend}
+                \Bullet{Observed the MVC design pattern: designed separate model and controller components}
+            \EndBulletList
+        
+        \vspace{8pt}
+        \NewProject
+            {Personal blog}
+            {$-$ Jekyll, HTML, Liquid, SCSS, Cloudflare Pages, Lighthouse}
+            {\href{https://www.fishersun.com}{www.fishersun.com}} 
+            
+            \BeginBulletList
+                \Bullet{Built a static site for personal coding reflections using Jekyll; deployed it using Cloudflare Pages}
+                \Bullet{Created a custom theme using HTML, Liquid, and SCSS; reached Lighthouse Performance score of 100\%}
+            \EndBulletList
+        
+        \vspace{8pt}
+        \NewProject
+            {Trashfree}
+            {$-$ Amazon EC2, Apache, PHP, MariaDB, SQL, HTML, CSS}
+            
+            \BeginBulletList
+                \Bullet{Developed, in a team of four, a web app to plan trash cleanups using PHP, HTML, and CSS}
+                \Bullet{Created a MariaDB database for storing user and event data; wrote the SQL queries that update it\%}
+            \EndBulletList
+
+    \EndSubsectionList
+
+\vspace{-20pt}
 \section{Activities}
-\begin{outline}
-    \entry{Developer Student Club WashU} / Technical Lead
-    \hfill Oct.\ 2021--May 2023
-        \1 Directed weekly events to establish community among 100+ members, provided guidance for \textsmaller{CS} projects
-\end{outline}
+\BeginSubsectionList        
+    \NewProject
+    {Developer Student Club WashU}
+    {$-$ Technical Lead}
+    {\href{https://www.dscwashu.com/}{dscwashu.com}} 
+
+    \BeginBulletList
+        \Bullet{Directed weekly events to establish community among 100+ members, provided guidance for CS projects}
+    \EndBulletList
+
+\EndSubsectionList
+
+\end{document}
