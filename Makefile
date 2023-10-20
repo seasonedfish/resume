@@ -1,10 +1,11 @@
 .PHONY: all
 all:
+	mkdir -p build
 	pdflatex -output-directory=build src/index.tex
 
 .PHONY: clean
 clean:
-	rm build/*
+	rm -f build/*
 
 .PHONY: watch
 watch:
