@@ -4,3 +4,4 @@ build/
 *.log
 *.out
 *.pdf
+*.xmpi
