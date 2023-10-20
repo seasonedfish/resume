@@ -5,3 +5,7 @@ all:
 .PHONY: clean
 clean:
 	rm build/*
+
+.PHONY: watch
+watch:
+	watchexec --watch src make all
