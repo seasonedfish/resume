@@ -1,7 +1,9 @@
+TEX = pdflatex -interaction=nonstopmode -file-line-error
+
 .PHONY: all
 all:
 	mkdir -p build
-	pdflatex -output-directory=build src/index.tex
+	$(TEX) -output-directory=build src/index.tex
 
 .PHONY: clean
 clean:
