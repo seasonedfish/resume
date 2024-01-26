@@ -1,4 +1,4 @@
-TEX = pdflatex -interaction=nonstopmode -file-line-error
+TEX = latexmk -pdf -interaction=nonstopmode -file-line-error
 
 .PHONY: all
 all:
