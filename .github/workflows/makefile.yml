@@ -1,12 +1,41 @@
 on: [push]
 jobs:
-  build_latex:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: xu-cheng/texlive-action@v2
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Run make with TeXLive
+        uses: xu-cheng/texlive-action@v2
         with:
           scheme: full
           run: |
             apk add make
             make
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.3.0
+        with:
+          name: yu-fisher-sun-resume.pdf
+          path: build/yu-fisher-sun-resume.pdf
+          # The desired behavior if no files are found using the provided path.
+          if-no-files-found: error
+  deploy:
+    # Add a dependency to the build job
+    needs: build
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
