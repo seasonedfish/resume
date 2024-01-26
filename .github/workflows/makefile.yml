@@ -12,13 +12,11 @@ jobs:
           run: |
             apk add make
             make
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v2
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3.0.0
         with:
-          name: yu-fisher-sun-resume.pdf
-          path: build/yu-fisher-sun-resume.pdf
-          # The desired behavior if no files are found using the provided path.
-          if-no-files-found: error
+          # Path of the directory containing the static assets.
+          path: build/
   deploy:
     # Add a dependency to the build job
     needs: build
@@ -38,4 +36,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3 # or specific "vX.X.X" version tag for this action
+        uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
