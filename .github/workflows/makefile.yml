@@ -13,7 +13,7 @@ jobs:
             apk add make
             make
       - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v4.3.0
+        uses: actions/upload-artifact@v2
         with:
           name: yu-fisher-sun-resume.pdf
           path: build/yu-fisher-sun-resume.pdf
