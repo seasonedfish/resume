@@ -58,26 +58,26 @@
 
 = Projects
 *Beatbuff* --- TypeScript, Next.js, React, Prisma, MySQL, Tailwind CSS
-#h(1fr) #link("https://github.com/seasonedfish/beatbuff")
+#h(1fr) #link("https://github.com/seasonedfish/beatbuff")[github.com/seasonedfish/beatbuff]
 - Collaborated within three-member team to develop web app for sharing music reviews using TypeScript and Next.js
 - Implemented database and REST-like API with MySQL and Prisma, allowing for efficient data management
 - Developed React components with Chakra UI and Tailwind CSS to create user-friendly interfaces
 - Practiced Agile development by continually seeking user feedback and improving features through sprints
 
 *Voting App* --- Go, Chi, MongoDB Atlas, MongoDB Go Driver
-#h(1fr) #link("https://github.com/seasonedfish/suelections")
+#h(1fr) #link("https://github.com/seasonedfish/suelections")[github.com/seasonedfish/suelections]
 - Built web app in which users can read about and vote for Student Union candidates
 - Developed REST-like API and routing logic using Go and Chi, resulting in fast server performance
 - Deployed database on MongoDB Atlas, wrote backend that updates it using MongoDB Go Driver
 - Implemented MVC design pattern with distinct model and controller components, simplifying code organization
 
 *HDN* --- Rust, Nix, Home Manager, CLIs, Linux
-#h(1fr) #link("https://github.com/seasonedfish/hdn")
+#h(1fr) #link("https://github.com/seasonedfish/hdn")[github.com/seasonedfish/hdn]
 - Developed Rust CLI tool to automate installing packages using Nix and Home Manager on macOS and Linux
 - Implemented rollback functionality using cross-platform filesystem module to restore previous state on user error
 
 *Personal Website* --- Astro, TypeScript, Tailwind CSS, Cloudflare Pages, Lighthouse
-#h(1fr) #link("https://www.fishersun.com")
+#h(1fr) #link("https://www.fishersun.com")[www.fishersun.com]
 - Built and deployed static site for personal coding reflections using Astro, TypeScript, and Cloudflare Pages
 - Created custom theme using Astro components and Tailwind CSS, achieved Lighthouse Performance score of 100%
 
