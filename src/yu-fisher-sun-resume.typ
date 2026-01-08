@@ -8,7 +8,7 @@
 
 #show title: it => {
 	set align(center)
-	set text(size: 15pt)
+	set text(size: 17pt)
 	it
 }
 
