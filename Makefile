@@ -1,9 +1,10 @@
-TEX = latexmk -gg -pdf -interaction=nonstopmode -file-line-error
+INPUT=src/yu-fisher-sun-resume.typ
+OUTPUT=build/yu-fisher-sun-resume.pdf
 
 .PHONY: all
 all:
 	mkdir -p build
-	$(TEX) -output-directory=build src/yu-fisher-sun-resume.tex
+	typst compile $(INPUT) $(OUTPUT)
 
 .PHONY: clean
 clean:
@@ -11,4 +12,4 @@ clean:
 
 .PHONY: watch
 watch:
-	watchexec --watch src make all
+	typst watch $(INPUT) $(OUTPUT)
