@@ -1,6 +1,9 @@
 #set page(
 	paper: "us-letter",
-	margin: 0.5in
+	margin: (
+		x: 0.5in,
+		y: 0.3in
+	)
 )
 
 #show title: it => {
@@ -11,7 +14,8 @@
 
 #show heading: it => {
 	set text(size: 13pt)
-	it
+	pad(bottom: -0.9em, it)
+	line(length: 100%, stroke: 0.5pt)
 }
 
 #set text(
