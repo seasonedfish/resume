@@ -9,7 +9,7 @@
 #show title: it => {
 	set align(center)
 	set text(size: 17pt)
-	it
+	pad(bottom: -0.2em, it)
 }
 
 #show heading: it => {
