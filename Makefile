@@ -1,10 +1,11 @@
 INPUT=src/yu-fisher-sun-resume.typ
 OUTPUT=build/yu-fisher-sun-resume.pdf
+ARGS=--pdf-standard a-1a
 
 .PHONY: all
 all:
 	mkdir -p build
-	typst compile $(INPUT) $(OUTPUT)
+	typst compile $(INPUT) $(OUTPUT) $(ARGS)
 
 .PHONY: clean
 clean:
@@ -12,4 +13,4 @@ clean:
 
 .PHONY: watch
 watch:
-	typst watch $(INPUT) $(OUTPUT)
+	typst watch $(INPUT) $(OUTPUT) $(ARGS)
