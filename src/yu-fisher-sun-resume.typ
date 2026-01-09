@@ -6,21 +6,27 @@
 	)
 )
 
+#set text(
+	size: 10.3pt,
+	font: "Charis"
+)
+
+#set par(
+	leading: 0.7em,
+	spacing: 1.5em
+)
+
 #show title: it => {
 	set align(center)
-	set text(size: 17pt)
+	set text(size: 18pt, weight: "regular")
 	pad(bottom: -0.2em, it)
 }
 
 #show heading: it => {
-	set text(size: 13pt)
+	set text(size: 13pt, weight: "regular")
 	pad(bottom: -0.9em, it)
-	line(length: 100%, stroke: 0.5pt)
+	line(length: 100%, stroke: 0.3pt)
 }
-
-#set text(
-	size: 11pt
-)
 
 #set document(
 	title: [Yu (Fisher) Sun]
