@@ -8,7 +8,7 @@
 
 #set text(
 	size: 10.3pt,
-	font: "Charis"
+	font: "Charis SIL"
 )
 
 #set par(
