@@ -44,8 +44,9 @@
 )
 #set align(left)
 
-= Education
-*Washington University in St. Louis* --- B.S. Computer Science, GPA 3.90 #h(1fr) Dec 2024
+= Skills
+*Languages*: TypeScript, JavaScript, HTML, CSS, Python, Java, SQL, Go, Rust
+\ *Technologies*: React, Angular, Next.js, Redux, Jest, DevTools, Nx, Node.js, Linux, AWS, Jenkins, Docker, Git, Figma
 
 = Experience
 *Frontend Software Engineer Intern*, Schneider Electric --- Andover, MA #h(1fr) June 2024 -- Aug 2024
@@ -91,6 +92,5 @@
 - Built and deployed static site for personal coding reflections using Astro, TypeScript, and Cloudflare Pages
 - Created custom theme using Astro components and Tailwind CSS, achieved Lighthouse Performance score of 100%
 
-= Skills
-*Languages*: TypeScript, JavaScript, HTML, CSS, Python, Java, SQL, Go, Rust
-\ *Technologies*: React, Angular, Next.js, Redux, Jest, DevTools, Nx, Node.js, Linux, AWS, Jenkins, Docker, Git, Figma
+= Education
+*Washington University in St. Louis* --- B.S. Computer Science, GPA 3.90 #h(1fr) Dec 2024
